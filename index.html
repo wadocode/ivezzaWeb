@@ -22,10 +22,10 @@
         <div id="menu-btn" class="fas fa-bars"></div>
     <nav class="navbar">
         <a href="#home">Inicio</a>
-        <a href="#events">Eventos</a>
+        <a href="/eventos.html">Eventos</a>
         <a href="#clubes">Clubes</a>
         <a href="#about">Nosotros</a>
-        <a href="#galeria">Galería</a>
+        <a href="/galeria.html">Galería</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -37,15 +37,17 @@
   <div class="swiper home-slider">
 
       <div class="swiper-wrapper">
+  
 
-          <div class="swiper-slide slide-cover" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(Assets/atletismo.JPG) no-repeat;">
+          <div class="swiper-slide slide-cover"
+           style="background:url(Assets/atletismo.JPG) no-repeat;">
             
               <div class="content">
                   <span>sé fuerte, sé fit</span>
                   <h3>La Aventura te espera</h3>
                   <a href="#" class="btn">Empezar</a>
               </div>
-          </div>
+        </div>
 
           <div class="swiper-slide slide-cover" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(Assets/ciclismo.JPG) no-repeat;">
               <div class="content">
@@ -389,22 +391,101 @@
 </section>
 <!-- about section ends -->
 <!--start  Galeria -->
-<section class="events" id="galeria">
-
+<section class="galeria" id="galeria">
   <h1 class="heading"> <span>Galería</span> </h1>
+  <div class="video-container">
+    <div class="mainVideo">
+      <iframe width="1263" height="480" src="https://www.youtube.com/embed/tnlqVu6Nvbw" title="Triatlon de Piura tercera edición 2019" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  <div class="event-container">
+    </div>
+    <div class="secondaryVideo">
+      <div class="otherVideo">
+        <iframe width="380" height="315" src="https://www.youtube.com/embed/lsUDegS6tsE" title="Triatlon de Piura segunda edición 2018" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="otherVideo">
+        <iframe width="380" height="315" src="https://www.youtube.com/embed/aD06yKjRdUg" title="Triatlon de Piura primer edición 2017" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  
+    </div>
+
 </div>
-</section>
+
+
 <!--End Galeria destacados -->
 
 <!--start  Contacto -->
-<section class="events" id="contacto">
 
+
+  
+
+<!-- contacto -->
+<section class="contacto" id="contacto">
   <h1 class="heading"> <span>Contacto</span> </h1>
+  <div class="contact-content">
+   
+  </div>    
+  <div class="contact-container">
+    <div class="contact-info">
 
-  <div class="event-container">
-</div>
+      <div class="contact-box">
+      <div class="contact-info-icon"><i class="fa-solid fa-location-pin"></i></div>
+      <div class="contact-info-text">
+        <h3>Direccion</h3>
+        <p>Av.Guillermo Irazola J-10,<br>Castilla, <br>Piura</p>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="contact-info-text">
+        <h3>Correo Electrónico</h3>
+        <p>informes@abacopiura.edu.pe</p>
+      </div>
+    </div>
+    <div class="contact-box">
+      <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+      <div class="contact-info-text">
+        <h3>Celular</h3>
+        <p>967 575 397</p>
+      </div>
+    </div>
+
+
+    </div>
+    <div class="contactform">
+      <form action="">
+        <h2>Enviar mensaje</h2>
+
+        <div class="inputbox">
+          <input type="text" name="" required="required">
+          <span>Nombre Completo</span>
+         </div>
+
+         <div class="inputbox">
+          <input type="email" name="" required="required">
+          <span>E-mail</span>
+         </div>
+
+         <div class="inputbox">
+          <input type="text" name="" required="required">
+          <span>Celular</span>
+         </div>
+
+       
+
+         <div class="inputbox">
+          <input type="submit" name="" value="Enviar">
+         </div>
+
+
+
+
+      </form>
+    </div>
+
+  </div>
+
+
 </section>
 <!--End contacto -->
 <!-- footer section starts  -->
