@@ -162,13 +162,16 @@ gap: 10px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    
+   
 }
 
 
 .info-tc  li{
     font-size: 1.5rem;
+    margin-bottom: 10px;
+   
 }
 li span{
     font-weight:bold;
@@ -258,6 +261,19 @@ li span{
     padding: 1.5rem;
     
     }
+    .info-2-insc p:first-child{
+        font-size: 2rem;
+        text-align: center;
+        background: var(--yellowAlt);
+        border-radius: 8px;
+        padding: 5px;
+     }
+    
+     .info-2-insc p{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        text-align: justify;
+     }
     .info-insc img{
         width: 100%;
     }
@@ -265,7 +281,7 @@ li span{
 /* parallax */
     .parallax {
         width: 100vw;
-        height: 50rem;
+        height: 100vh;
         overflow-y: auto;
         overflow-x: hidden;
         perspective: 10px;
@@ -273,48 +289,84 @@ li span{
         margin: 0;
       }
       
-      .wrapper-parallax {
-        position: relative;
-        display: flex;
-        justify-content: center;
+.wrapper-parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+      
+ .background {
+ transform: translateZ(-10px) scale(2);
+}
+      
+ .foreground {
+ transform: translateZ(-5px) scale(1.5);
+      }
+      
+ .background,
+.foreground {
+ position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+z-index: -1;
+ }
+      
+.title {
+font-size: 7rem;
+ color: white;
+text-shadow: 0 0 5px black;;
+ }
+  /* condiciones de inscripciones */
+  .condiciones{
+    padding: 2rem;
+    background:#1C347D;
+    color:#fff;
+  }
+ .condiciones-insc{
+ margin-top: 10px;
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+ gap: 10px;
+ padding: 1.5rem;
+        
+ }
+ .condiciones-2-insc p:first-child{
+    font-size: 2rem;
+    text-align: center;
+    background: var(--yellowAlt);
+    border-radius: 8px;
+    padding: 5px;
+ }
+
+ .condiciones-2-insc p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: justify;
+   
+   
+ }
+ .condiciones-insc img{
+   width: 100%;
+ }
+
+/* Responsive */
+@media only screen and (max-width: 850px) {
+    .tc-container{
+        display: grid;
+        grid-template-columns: 40% 1fr;
         align-items: center;
-        height: 100%;
-        transform-style: preserve-3d;
-        z-index: -1;
-      }
-      
-      .background {
-        transform: translateZ(-10px) scale(2);
-      }
-      
-      .foreground {
-        transform: translateZ(-5px) scale(1.5);
-      }
-      
-      .background,
-      .foreground {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
-      
-      .title {
-        font-size: 7rem;
-        color: white;
-        text-shadow: 0 0 5px black;;
-      }
-      /* condiciones de inscripciones */
-      .condiciones-insc{
+        gap: 10px;
+    }
+    .paquetes{
         margin-top: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        padding: 1.5rem;
         
         }
-        .condiciones-insc img{
-            width: 100%;
-        }
-    
+}
